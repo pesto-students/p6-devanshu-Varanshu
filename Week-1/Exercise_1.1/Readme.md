@@ -16,6 +16,7 @@ The browsers main components are as follows<br/>
     5. **UI Backend** - This is a backend which is responsible for displaying widgets, and other third party interfaces<br/>
     6. **Javascript Interpreter** - Used to execute and display javascript code which could be found as *.js* files.<br/>
     7. **Data Storage** - All the browsers have the functionality for storing data in multiple manner like localStorage, cookies, etc.<br/>
+    ![main_components](https://github.com/pesto-students/p6-devanshu-Varanshu/blob/master/Week-1/Exercise_1.1/main_components.png)
 <br/><br/>
 
 Different browsers use different rendering engines to display the content on the window.<br/>
@@ -40,3 +41,12 @@ Conceptually it seems that since style sheets don't change the DOM tree, there i
 While the DOM tree is being constructed, the browser constructs another tree, the render tree. This tree is of visual elements in the order in which they will be displayed. It is the visual representation of the document. The purpose of this tree is to enable painting the contents in their correct order.<br/>
 Firefox calls the elements in the render tree "frames". WebKit uses the term renderer or render object.<br/>
 A renderer knows how to lay out and paint itself and its children.
+## Layout & Painting ##
+### Layout ###
+When the renderer is created and added to the tree, it does not have a position and size. Calculating these values is called layout or reflow.<br/>
+HTML uses a flow based layout model, meaning that most of the time it is possible to compute the geometry in a single pass. Elements later "in the flow" typically do not affect the geometry of elements that are earlier "in the flow", so layout can proceed left-to-right, top-to-bottom through the document. There are exceptions: for example, HTML tables may require more than one pass.<br/>
+The coordinate system is relative to the root frame. Top and left coordinates are used.<br/>
+### Painting ###
+In the painting stage, the render tree is traversed and the renderer's "paint()" method is called to display content on the screen. Painting uses the UI infrastructure component.
+#### Global and Incremental ####
+Like layout, painting can also be global - the entire tree is painted - or incremental. In incremental painting, some of the renderers change in a way that does not affect the entire tree. The changed renderer invalidates its rectangle on the screen. This causes the OS to see it as a "dirty region" and generate a "paint" event.
