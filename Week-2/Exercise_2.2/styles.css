@@ -1,0 +1,89 @@
+/* .box {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background: black;
+    width: 200px;
+    height: 200px;
+    transition: transform 1s linear;
+    transform-origin: top left;
+    transform-style: preserve-3D;
+}
+
+body:hover .box {
+    transform: rotate(90deg);
+} */
+
+.container {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+/* .box:hover {
+    transform: rotate(90deg);
+} */
+
+.box {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+.container:hover .box-left-top,
+.container:hover .box-right-bottom {
+    transform: rotate(90deg);
+}
+
+.container:hover .box-left-bottom,
+.container:hover .box-right-top {
+    transform: rotate(-90deg);
+}
+
+/* 
+.container:hover .box-right-top {
+    transform: rotate(-90deg);
+} */
+
+.box-left-bottom,
+.box-left-top,
+.box-right-bottom,
+.box-right-top {
+    transition: transform 0.75s linear;
+    transform-style: preserve-3D;
+}
+
+.box-left-top {
+    left: 0;
+    top: 0;
+    transform-origin: top left;
+    background: #ff0000;
+}
+
+.box-left-bottom {
+    left: 0;
+    bottom: 0;
+    transform-origin: bottom left;
+    background: #0000ff;
+}
+
+.box-right-top {
+    right: 0;
+    top: 0;
+    transform-origin: top right;
+    background: #ffff00;
+}
+
+.box-right-bottom {
+    right: 0;
+    bottom: 0;
+    transform-origin: bottom right;
+    background: #007d00;
+}
