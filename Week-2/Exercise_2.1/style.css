@@ -40,3 +40,38 @@ body {
         align-items: center;
     }
 }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 60%;
+    margin-top: 10vh;
+}
+
+input[type=submit] {
+    width: fit-content;
+}
+
+.input_field_container {
+    display: flex;
+}
+
+.empty-gap {
+    flex-grow: 1;
+}
+
+.form-container input:not([type=checkbox]) {
+    width: 40%;
+}
+
+.form-container select {
+    width: 40%;
+    padding: 1px 2px;
+}
+
+.radio-container {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-evenly;
+}
