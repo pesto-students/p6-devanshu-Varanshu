@@ -1,0 +1,37 @@
+body {
+    padding: 10vh 10vw;
+}
+
+.title {
+    width: 35vw;
+    text-align: center;
+    margin: auto;
+    word-break: keep-all;
+}
+
+.columns {
+    display: flex;
+    column-gap: 40px;
+}
+
+
+@media (max-width: 680px) {
+    body {
+        padding: 5vh 5vw;
+    }
+
+    .title {
+        width: 80vw;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+    }
+}
