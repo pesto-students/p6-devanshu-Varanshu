@@ -1,0 +1,15 @@
+body {
+    padding: 10vh 10vw;
+}
+
+.title {
+    width: 35vw;
+    text-align: center;
+    margin: auto;
+    word-break: keep-all;
+}
+
+.columns {
+    display: flex;
+    column-gap: 40px;
+}
