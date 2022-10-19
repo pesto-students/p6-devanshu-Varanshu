@@ -38,3 +38,19 @@ var phone = {
 
 productDetails.getDetails.call(book, 'JK Rowling')
 productDetails.getDetails.call(phone, 'OnePlus')
+
+
+//Apply Functionality Implementation
+const capitals = {
+    info: function (capital, country) {
+        return `According to ${this.name}: ${capital} is the capital of ${country}`
+    }
+}
+
+const india = ['New Delhi', 'India']
+const usa = ['Washington DC', 'USA']
+const uk = ['London', 'Great Britain']
+
+console.log(capitals.info.apply({ name: 'Varanshu' }, india));
+console.log(capitals.info.apply({ name: 'Rahul' }, usa));
+console.log(capitals.info.apply({ name: 'Shyam' }, uk));
