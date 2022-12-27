@@ -1,0 +1,21 @@
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+.listCheckbox:checked~.itemContent {
+    text-decoration: line-through;
+}
+
+.delete {
+    font-size: 1rem;
+    margin-left: auto;
+    text-decoration: underline;
+    cursor: pointer;
+}

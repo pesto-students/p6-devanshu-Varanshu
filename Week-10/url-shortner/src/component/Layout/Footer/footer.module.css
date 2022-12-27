@@ -1,0 +1,33 @@
+.footerContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    background-color: #000;
+}
+
+.footerLinkContainer {
+    display: flex;
+    column-gap: 35px;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.title {
+    color: #33313e;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.link,
+.linkHeader {
+    color: #c9c9c9;
+}
+
+.linkHeader {
+    font-size: 26px;
+}

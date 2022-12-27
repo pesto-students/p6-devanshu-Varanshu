@@ -1,0 +1,83 @@
+body {
+    padding: 10vh 10vw;
+}
+
+.title {
+    width: 35vw;
+    text-align: center;
+    margin: auto;
+    word-break: keep-all;
+}
+
+.columns {
+    display: flex;
+    column-gap: 40px;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 680px) {
+    body {
+        padding: 5vh 5vw;
+    }
+
+    .columns {
+        row-gap: 10px;
+    }
+
+    .title {
+        width: 80vw;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+    }
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 60%;
+    margin-top: 10vh;
+}
+
+@media (max-width: 680px) {
+    .form-container {
+        width: 95%;
+    }
+}
+
+input[type=submit] {
+    width: fit-content;
+}
+
+.input_field_container {
+    display: flex;
+}
+
+.empty-gap {
+    flex-grow: 1;
+}
+
+.form-container input:not([type=checkbox]) {
+    width: 40%;
+}
+
+.form-container select {
+    width: 40%;
+    padding: 1px 2px;
+}
+
+.radio-container {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,1 @@
+export { useShorten } from './function/useShorten'
