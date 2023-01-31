@@ -1,0 +1,25 @@
+# Getting Started with Uploading React App to Netlify
+
+## Navigate to Create a Site
+
+First find a dropdown available on the netlify dashboard where you can select `add a new site`\
+You can choose among the options available depending upon your preference.\
+
+### Upload from GitHub
+
+If you have a project ready in github select `import from existing project`\
+You will need to install netlify in your repository. It could be achived easily by following the steps.\
+And navigating to your repository.
+
+### Change Base Configurations
+
+After you have selected the repository you can select which branch you want to deploy.\
+Specify the `Base directory`: this stands for where your main code is present. \
+In this project the base directory was `Week-11/url-shortner`
+2nd Steps is selecting the `Public Directory`: this stands for where the netlify should look to build.\
+3rd and main step is the `Build Command`: here you will specify through which command your code will build\
+
+### Site
+
+After completing the above steps correctly and after the build process is complete a site will be created.\
+The name of the website created will be randomly generated. You could change in via `site settings` menu and clicking `site name`
